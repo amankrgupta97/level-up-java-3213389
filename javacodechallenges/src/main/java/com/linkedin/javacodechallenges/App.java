@@ -4,7 +4,9 @@ import java.util.Scanner;
 
 public class App {
     public static boolean isEven(int n) {
-        // todo: implement functionality
+        if(n%2==0){
+            return true;
+        }
         return false;
     }
 
