@@ -33,15 +33,11 @@ public class DoubleOrNothing {
     System.out.println("Welcome to the Game!!");
   }
 
-  protected void askUserToContinue(){
+  private void askUserToContinue(){
     System.out.println("Do You want to Continue?");
     this.isStillPlaying=this.scanner.nextLine().toUpperCase().equals("YES");
   }
   
-  protected boolean getIsStillPlaying(){
-    return this.isStillPlaying;
-  }
-
   private void printTryToDouble(){
     System.out.println("Let's try to Double it..");
   }
