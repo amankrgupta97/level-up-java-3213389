@@ -14,6 +14,5 @@ public class App
     {
         LocalDate today=LocalDate.now(ZoneId.of("Asia/Kolkata"));
         System.out.println("100 days from now is... "+calculate100DaysFromNow(today) );
-
     }
 }
