@@ -1,13 +1,19 @@
 package com.linkedin.javacodechallenges;
 
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
+
 public class App 
 {
-    // Create function to calculate the date that's 
-    // 100 days from now
-
+    public static LocalDate calculate100DaysFromNow(LocalDate today){
+        Period hunderedDays=Period.ofDays(100);
+        return today.plus(hunderedDays);
+    }
     public static void main( String[] args )
     {
-        System.out.println("100 days from now is... " 
-            /* add function call */);
+        LocalDate today=LocalDate.now(ZoneId.of("Asia/Kolkata"));
+        System.out.println("100 days from now is... "+calculate100DaysFromNow(today) );
+
     }
 }
